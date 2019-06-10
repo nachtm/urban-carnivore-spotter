@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/urban-carnivore-spotter/static/js/runtime~main.b0fb83d2.js"
   },
   {
-    "revision": "ec0e0fde9f64a4f98fd9",
-    "url": "/urban-carnivore-spotter/static/js/main.26181d26.chunk.js"
+    "revision": "59868cd09a9599ae8b84",
+    "url": "/urban-carnivore-spotter/static/js/main.53d12482.chunk.js"
   },
   {
     "revision": "bfa4430e40f1fd8fae00",
     "url": "/urban-carnivore-spotter/static/js/2.4a85b39d.chunk.js"
   },
   {
-    "revision": "ec0e0fde9f64a4f98fd9",
+    "revision": "59868cd09a9599ae8b84",
     "url": "/urban-carnivore-spotter/static/css/main.8a8ae92d.chunk.css"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/urban-carnivore-spotter/static/css/2.50def0e7.chunk.css"
   },
   {
-    "revision": "862c20f4317e2931de3ad7cc3de3f55c",
+    "revision": "f641b51c0a53a2cfc87969565389a36a",
     "url": "/urban-carnivore-spotter/index.html"
   }
 ];
