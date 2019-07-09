@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "seattlecarnivores-edca2"
+    "default": "seattlecarnivores-edca2",
+    "firebase-staging": "seattlecarnivores-edca2"
   }
 }
