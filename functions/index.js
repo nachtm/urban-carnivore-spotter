@@ -96,6 +96,33 @@ exports.getReport = functions.https.onRequest((req, res) => {
   });
 });
 
+exports.dataDump = functions.https.onRequest((req, res) => {
+  return cors(req, res, () => {
+    if (req.method !== 'GET') {
+      return res.status(401).json({
+        message: 'Not allowed'
+      });
+    }
+    let reports = database.collection(REPORTS);
+    return reports
+      .get()
+      .then(snapshot => {
+        let items = [];
+        snapshot.forEach(doc => {
+          items.push({ id: doc.id, data: doc.data() });
+        });
+        return items.length === 0 ? res.status(200).send('No data!') : res.status(200).send(items);
+      })
+      .catch(err => {
+        res.status(500).send(`Error getting documents: ${err}`);
+      });
+    },
+    (error) => {
+      res.status(error.code).json({
+        message: `Something went wrong. ${error.message}`
+      });
+    });
+});
 
 /**
  * Internal helper method to build database queries given some parameters.
